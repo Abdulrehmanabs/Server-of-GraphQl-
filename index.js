@@ -16,8 +16,6 @@ const path = require('path');
 // dotenv.config({ path: "./.env" });
 
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static("./build"))
 
 
 
@@ -28,6 +26,8 @@ const bootstrapServer = async () => {
 
     // app.use("/graphql", expressMiddleware(server));
     app.use('/graphql', cors(), express.json(), expressMiddleware(server));
+    app.use(express.urlencoded({ extended: true }));
+    app.use(express.static("./build"))
 
 
 
