@@ -1,6 +1,4 @@
-let { gql } = require("apollo-server")
-
-const typeDefs = gql`
+const typeDefs = `#graphql
     
     type User {
         _id: String!
