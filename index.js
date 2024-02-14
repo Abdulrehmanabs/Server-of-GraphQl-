@@ -1,17 +1,3 @@
-// let { ApolloServer } = require("apollo-server")
-// let server = new ApolloServer({ typeDefs, resolvers })
-
-// // listening at random port
-// server.listen({ port: 5000 }).then(({ url }) => {
-//     console.log(`Your server is running on    ${url}  :)`)
-// })
-
-
-
-
-
-
-
 
 const express = require("express");
 let { typeDefs } = require("./Schema/typeDefs")
